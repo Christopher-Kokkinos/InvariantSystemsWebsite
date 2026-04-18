@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Method • Invariant Systems</title>
+  <meta name="description" content="Epistemic method for structural diagnostics using behavioural evidence only." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <strong>Invariant Systems</strong>
+        <span>Structural diagnostics for adaptive systems</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="ssda.html">SSDA</a>
+        <a href="method.html" aria-current="page">Method</a>
+        <a href="boundaries.html">Boundaries</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Epistemic posture</span>
+      <h1>Method</h1>
+      <p>
+        Invariant Systems performs structural diagnostics on adaptive systems using behavioural evidence only.
+        The method is designed to determine regime class and identify the boundaries of valid inference.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin-top:0">Core commitments</h2>
+
+      <h3>1. Behavioural sufficiency</h3>
+      <p class="note">
+        Structural properties of adaptive systems are observable through behaviour: decision traces,
+        feedback dynamics, response to perturbation, and temporal coupling with environment.
+      </p>
+      <p class="note">
+        Access to internals is not required to classify regime stability or detect drift.
+        Requests for internals are treated as diagnostically meaningful, but not necessary.
+      </p>
+
+      <h3>2. Regime classification over prediction</h3>
+      <p class="note">
+        The audit does not predict outcomes, optimise performance, or recommend interventions.
+        It classifies the operating regime and identifies where inference becomes unreliable or invalid.
+      </p>
+      <p class="note">
+        Where a system cannot be made reliable under current coupling, that impossibility
+        is reported explicitly.
+      </p>
+
+      <h3>3. Boundary-first epistemology</h3>
+      <p class="note">
+        The primary output of the audit is a boundary map: what cannot be safely inferred,
+        optimised, or relied upon given the evidence provided.
+      </p>
+      <p class="note">
+        Claims that cannot be grounded within these boundaries are not made.
+      </p>
+    </section>
+
+    <section class="panel" style="margin-top:14px">
+      <h2 style="margin-top:0">What this method avoids</h2>
+      <ul class="klist">
+        <li><strong>Speculation</strong> beyond observable behaviour</li>
+        <li><strong>Interpretation of intent</strong> or internal design choices</li>
+        <li><strong>Normative judgement</strong> about how a system should behave</li>
+        <li><strong>Open-ended engagements</strong> without a defined exit</li>
+      </ul>
+    </section>
+
+    <section class="panel" style="margin-top:14px">
+      <h2 style="margin-top:0">Resulting posture</h2>
+      <p class="note">
+        This method prioritises epistemic integrity over explanatory completeness.
+        Where certainty is not justified, boundaries are drawn instead.
+      </p>
+      <p class="note">
+        The goal is not to be helpful at all costs, but to be correct about what can
+        and cannot be known.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div class="line">
+        <span>© <span id="y"></span> Invariant Systems</span>
+        <span><a href="legal.html">Privacy &amp; Terms</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

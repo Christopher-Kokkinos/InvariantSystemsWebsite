@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SSDA • Invariant Systems</title>
+  <meta name="description" content="Structural Stability & Drift Audit (SSDA): regime classification and boundary identification using behavioural evidence only." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <strong>Invariant Systems</strong>
+        <span>Structural diagnostics for adaptive systems</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="ssda.html" aria-current="page">SSDA</a>
+        <a href="method.html">Method</a>
+        <a href="boundaries.html">Boundaries</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Structural Stability &amp; Drift Audit</span>
+      <h1>SSDA</h1>
+      <p>
+        The SSDA determines whether a system is structurally stable, marginally stable, drifting, locked,
+        or operating outside valid learning regimes. The audit is diagnostic-only and uses behavioural evidence only.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin-top:0">Output</h2>
+      <ul class="klist">
+        <li><strong>Regime classification</strong> and confidence notes</li>
+        <li><strong>Invalid assumptions</strong> (what breaks, when, and why)</li>
+        <li><strong>What cannot be safely inferred</strong> under the current system–environment coupling</li>
+        <li><strong>Boundaries</strong> around safe reasoning and evaluation</li>
+      </ul>
+      <p class="note">
+        No fixes are prescribed. No tuning advice. No roadmap. The report is designed to be an epistemic boundary document.
+      </p>
+    </section>
+
+    <div class="grid" style="margin-top:14px">
+      <section class="panel">
+        <h2 style="margin-top:0">Evidence intake (A–D)</h2>
+        <ul class="klist">
+          <li><strong>A. Decision trace data:</strong> time-ordered records of decisions or outputs</li>
+          <li><strong>B. Outcome / feedback signals:</strong> observed consequences, delays, missingness</li>
+          <li><strong>C. Intervention &amp; change logs:</strong> human/system changes over time</li>
+          <li><strong>D. Contextual metadata:</strong> lightweight environment descriptors to test behavioural tracking</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2 style="margin-top:0">Explicit exclusions</h2>
+        <ul class="klist">
+          <li><strong>No model internals</strong> (weights, activations, prompts, hidden state)</li>
+          <li><strong>No source code</strong> review</li>
+          <li><strong>No training data</strong> access</li>
+          <li><strong>No proprietary features</strong> or internal schemas required</li>
+        </ul>
+        <p class="note">
+          Requests for internals are treated as diagnostically meaningful, but they are not required for engagement.
+        </p>
+      </section>
+    </div>
+
+    <section class="panel" style="margin-top:14px">
+      <h2 style="margin-top:0">Engagement shape</h2>
+      <ul class="klist">
+        <li><strong>Short, bounded engagement</strong> with clear entry and exit</li>
+        <li><strong>Evidence acceptance</strong> is the core intake philosophy</li>
+        <li><strong>Invariant Systems retains epistemic authority</strong> over the diagnosis</li>
+      </ul>
+      <div class="cta">
+        <a class="button" href="eligibility.html">Run eligibility check</a>
+        <a class="button secondary" href="mailto:contact@invariantsystems.co.uk?subject=SSDA%20Eligibility%20Check&body=System%20class%3A%0AWhat%20you%20want%20diagnosed%3A%0AEvidence%20types%20available%20(A-D)%3A%0AAny%20constraints%20or%20sensitivity%3A">Email eligibility note</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="line">
+        <span>© <span id="y"></span> Invariant Systems</span>
+        <span><a href="legal.html">Privacy &amp; Terms</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

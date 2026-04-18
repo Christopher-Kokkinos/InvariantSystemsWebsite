@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invariant Systems</title>
+  <meta name="description" content="Structural diagnostics for adaptive systems. Diagnostic-only. Behavioural evidence only. Clear boundaries." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <strong>Invariant Systems</strong>
+        <span>Structural diagnostics for adaptive systems</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="ssda.html">SSDA</a>
+        <a href="method.html">Method</a>
+        <a href="boundaries.html">Boundaries</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Diagnostic-only • Behavioural evidence • Bounded engagements</span>
+      <h1>Invariant Systems</h1>
+      <p>
+        Invariant Systems is a structural diagnostic practice for adaptive systems. We classify behavioural regimes,
+        identify invalid assumptions, and draw explicit boundaries around what can and cannot be safely inferred.
+      </p>
+      <p>
+        We do <strong>not</strong> optimise, tune, inspect model internals, or predict outcomes. We run one service:
+        the <strong>Structural Stability &amp; Drift Audit (SSDA)</strong>.
+      </p>
+      <div class="cta">
+        <a class="button" href="ssda.html">Read the SSDA</a>
+        <a class="button secondary" href="eligibility.html">Check eligibility</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2 style="margin-top:0">What you get</h2>
+        <ul class="klist">
+          <li><strong>Regime classification</strong> (stable / marginal / drifting / locked / outside valid learning regimes)</li>
+          <li><strong>Invalid assumptions</strong> called out explicitly (stationarity, feedback, evaluation reliability)</li>
+          <li><strong>Boundaries</strong> for safe reasoning: what cannot be inferred under current coupling</li>
+          <li><strong>Low burden intake</strong> using behavioural evidence (no internals required)</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="note">
+          Quiet inbound only. Send a short note describing the system class and what evidence types you can provide.
+        </p>
+        <p>
+          Email: <a href="mailto:contact@invariantsystems.co.uk">contact@invariantsystems.co.uk</a>
+        </p>
+        <hr />
+        <p class="note">
+          If you are seeking optimisation, architecture advice, root-cause fixes, or internal audits, this is not the right fit.
+        </p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="line">
+        <span>© <span id="y"></span> Invariant Systems</span>
+        <span>
+          <a href="legal.html">Privacy &amp; Terms</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

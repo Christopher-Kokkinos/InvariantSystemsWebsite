@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eligibility • Invariant Systems</title>
+  <meta name="description" content="Eligibility check: five questions to determine if the SSDA is the right engagement shape." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <strong>Invariant Systems</strong>
+        <span>Structural diagnostics for adaptive systems</span>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="ssda.html">SSDA</a>
+        <a href="method.html">Method</a>
+        <a href="boundaries.html">Boundaries</a>
+        <a href="eligibility.html" aria-current="page">Eligibility</a>
+        <a href="legal.html">Legal</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Eligibility check</span>
+      <h1>How to engage</h1>
+      <p>
+        The first step is an eligibility check. If eligible, we proceed to the SSDA with a bounded evidence intake.
+        If not, we will decline quickly and clearly.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2 style="margin-top:0">Five eligibility questions</h2>
+      <ol class="klist">
+        <li><strong>Can you provide behavioural evidence (A–D)?</strong> Decision traces, outcomes/feedback, change logs, and lightweight context.</li>
+        <li><strong>Are you seeking a diagnosis, not a fix?</strong> The output is regime classification and boundaries, not optimisation.</li>
+        <li><strong>Can the engagement stay bounded?</strong> Short, contained scope with a clear exit.</li>
+        <li><strong>Is “no internals” acceptable?</strong> We do not require source code, training data, or model internals.</li>
+        <li><strong>Are you willing to accept a “cannot be made reliable” outcome?</strong> Sometimes the correct result is an impossibility boundary under current coupling.</li>
+      </ol>
+
+      <div class="cta">
+        <a class="button" href="mailto:contact@invariantsystems.co.uk?subject=Eligibility%20Check&body=1)%20System%20class%3A%0A2)%20Objective%20(diagnostic)%3A%0A3)%20Evidence%20available%20(A-D)%3A%0A4)%20Constraints%20(sensitivity%2Favailability)%3A%0A5)%20Anything%20you%20explicitly%20cannot%20share%3A">Send eligibility email</a>
+        <a class="button secondary" href="ssda.html">Review SSDA details</a>
+      </div>
+
+      <hr />
+      <p class="note">
+        If your request requires <span class="inline code">optimisation</span>, <span class="inline code">internals</span>, or <span class="inline code">prediction</span>,
+        it will be declined. See <a href="boundaries.html">Boundaries</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div class="line">
+        <span>© <span id="y"></span> Invariant Systems</span>
+        <span><a href="legal.html">Privacy &amp; Terms</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
